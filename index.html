@@ -8,6 +8,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NV4B8P6');</script>
 <!-- End Google Tag Manager -->
+    $(function() {
+  
+  
+  $("#nav_bar").on("click", function() {
+    dataLayer.push({
+      'event': 'add_to_cart',
+'name': 'T-Shirt',
+ 'price': 1000,
+ 'quantity': 1
+    });
+  });
+  
+  
+});
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -97,8 +111,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </ul>
               </nav>
             </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<button id="data_243342" type="button">Send</button>
             <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
               <a id="nav_bar"
                 href="javascript:void(0)"
